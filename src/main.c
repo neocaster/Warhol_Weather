@@ -282,7 +282,7 @@ void request_weather() {
 	}
 	// Build the HTTP request
 	DictionaryIterator *body;
-	HTTPResult result = http_out_get("http://SOME_URL_HERE_/weather.php", WEATHER_HTTP_COOKIE, &body);
+	HTTPResult result = http_out_get("http://futtle.com/pebble/dookie_weather.php", WEATHER_HTTP_COOKIE, &body);
 	if(result != HTTP_OK) {
 		weather_layer_set_icon(&weather_layer, WEATHER_ICON_NO_WEATHER);
 		return;
