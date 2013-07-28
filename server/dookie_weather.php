@@ -17,7 +17,7 @@ if(!$payload) die();
 $payload[1] /= 10000;
 $payload[2] /= 10000;
 
-$contents = get_data("https://api.forecast.io/forecast/API_KEY_GOES_HERE/$payload[1],$payload[2]?units=$payload[3]&exclude=hourly,minutely,alerts");
+$contents = get_data("https://api.forecast.io/forecast/2c74c78b5104f25ac7bc9c14c435625f/$payload[1],$payload[2]?units=$payload[3]&exclude=hourly,minutely,alerts");
 
 $forecast = json_decode($contents);
  
