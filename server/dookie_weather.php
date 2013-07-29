@@ -11,7 +11,7 @@ function get_data($url) {
     return $data;
 }
 
-define('API_KEY', 'API_KEY_GOES_HERE'); 
+define('API_KEY', '2c74c78b5104f25ac7bc9c14c435625f'); 
 $payload = json_decode(file_get_contents('php://input'), true);
 if(!$payload) die();
 $payload[1] /= 10000;
