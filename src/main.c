@@ -282,7 +282,7 @@ void request_weather() {
 	}
 	// Build the HTTP request
 	DictionaryIterator *body;
-	HTTPResult result = http_out_get("http://joinmytri.be/weather.php", WEATHER_HTTP_COOKIE, &body);
+	HTTPResult result = http_out_get("http://192.168.1.7/weather.php", WEATHER_HTTP_COOKIE, &body);
 	if(result != HTTP_OK) {
 		weather_layer_set_icon(&weather_layer, WEATHER_ICON_NO_WEATHER);
 		return;
